@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>TC Lp Builder</title>
+        <link rel="icon" href="favicon.webp" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/ws-refresh.js"></script>
+        <link rel="stylesheet" href="css/shared.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+    </head>
+    <body>
+        <div id="system-menu"></div>
+        <div id="workspace"></div>
+        <div id="expand-marker"></div>
+        <script type="text/javascript">
+            if(location.host.match(/localhost/)) wsRefresh()
+            const bounds = {
+                sidebar: 250
+            }
+            try {
+                window.moveTo(0, 0);
+                window.resizeTo(screen.availWidth, screen.availHeight);
+            } catch(e) {
+                console.log(e);
+            }
+        </script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" defer src="js/menu.js"></script>
+    </body>
+</html>

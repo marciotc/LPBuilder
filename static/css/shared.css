@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: virtue;
+  src: local("/fonts/virtue.ttf"), url("/fonts/virtue.ttf"); }
+
+body {
+  background: #00162d url("/img/logo-bg.svg") no-repeat center center;
+  background-size: 256px 256px;
+  font: 12px Arial, Helvetica, sans-serif; }

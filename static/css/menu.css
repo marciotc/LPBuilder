@@ -1,0 +1,58 @@
+#menu-placeholder {
+  position: fixed;
+  top: 20;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  display: none;
+  z-index: 91; }
+
+#system-menu {
+  z-index: 90;
+  width: calc(100vw - 20px);
+  border-top: 1px solid #000;
+  max-height: 19px;
+  display: flex;
+  background: #fff url("/img/logo.svg") no-repeat 2px 2px;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  background-size: 16px 16px;
+  font: 12px virtue;
+  overflow: hidden;
+  padding-left: 20px;
+  user-select: none; }
+  #system-menu nav ul {
+    list-style: none; }
+    #system-menu nav ul > li {
+      margin: 0;
+      padding: 3px 8px;
+      float: left; }
+    #system-menu nav ul ul {
+      position: absolute;
+      top: 20px;
+      background: #fff;
+      border: 1px solid #fff;
+      display: none;
+      flex-direction: column;
+      z-index: 92;
+      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+      margin-left: -5px; }
+      #system-menu nav ul ul li {
+        padding: 5px 5px 3px 5px;
+        min-width: 150px; }
+    #system-menu nav ul .menu-separator {
+      padding: 0;
+      height: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  #system-menu nav li {
+    cursor: pointer; }
+    #system-menu nav li .selected, #system-menu nav li li:not(.menu-separator):hover {
+      color: #fff;
+      background-color: #1B7DFb; }
+    #system-menu nav li li.normal {
+      color: #000 !important;
+      background-color: #fff !important; }
+    #system-menu nav li li.disabled, #system-menu nav li li.disabled:hover {
+      color: #ccc !important;
+      background: #fff !important; }
